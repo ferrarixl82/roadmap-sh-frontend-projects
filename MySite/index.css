@@ -1,0 +1,241 @@
+/*for mobile*/
+body{
+margin: 0px;
+border: 2px solid black;
+font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding-bottom: 10vw;
+}
+nav{
+    display: flex;
+}
+
+.name-container{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+img{
+    height: 30px;
+    padding-right: 15px;
+    
+}
+
+.main-header{
+    flex-grow: 1;
+    margin-top: 35px;
+    font-family: "Comic Sans MS", cursive, sans-serif;;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+
+
+/*Project section*/
+.projects-section{
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    border-collapse: collapse;
+}
+.project-container{
+    margin-bottom: 0px;
+    border-top:1px solid black;
+    
+    background-color:rgb(255, 234, 237);
+    padding:15px;
+    border-collapse: collapse;
+}
+.project-container:hover{
+    background-color: antiquewhite;
+}
+
+
+
+/*Work section*/
+.work-section{
+    
+    border-bottom:2px solid black;
+    border-collapse: collapse;
+}
+.work-header{
+    text-align: center;
+    border-bottom:2px solid black;
+    margin: 0;
+    padding: 12px 12px;
+}
+
+.work-container{
+    background-color: rgb(255, 234, 237);
+    padding: 20px 20px;
+    border-collapse: collapse;
+    border-top: 2px solid gray;
+}
+p{
+    margin: 0px;
+}
+.par-header{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding-bottom: 5px;
+}
+
+.work-link{
+    padding-top: 10px;
+}
+
+#work-container-first{
+    border: none;
+}
+
+
+/*Education section*/
+
+
+.education-section{
+
+    
+    border-bottom:2px solid black;
+    border-collapse: collapse;
+    
+    
+}
+.edu-par{
+    padding-top:10px;
+}
+
+.edu-header{
+    text-align: center;
+}
+
+/*Reviews section*/
+
+footer{
+    text-align: center;
+}
+
+.reviews-header{
+    padding: 20px 20px;
+}
+
+.reviews-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 700px;
+    
+}
+
+.reviews-container{
+    text-align: left;
+    width: 300px;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.rights{
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.reviews-sign{
+    padding-top: 10px;
+    color:gray;
+}
+
+
+/*for desktop*/
+@media (min-width:768px) {
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: inline-block;
+        h1{text-align: center;}
+    }
+    .name-header{
+         font-family: "Orbitron", sans-serif;
+    }
+    img{
+        padding-right: 10px;
+        
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        height:max-content
+    }
+    nav{
+        display: flex;
+        width: 300px;
+        justify-content: space-around;
+    }
+     .work-section{
+        border-right: 2px solid black;
+        border-left:  2px solid black;
+        border-bottom: none;
+        
+    }
+    .education-section{
+        border-bottom: none;
+    }
+    
+    .projects-section{
+        flex-grow:1 ;
+        width: 33%;
+        border: none;
+    }
+    #project-header{
+        border: none;    
+    }
+    .work-container, .project-container{
+        background-color: white;
+    }
+    .reviews-header{
+        text-align: start;
+        margin-left: 60px;
+    }
+
+    .reviews-section{
+        display: flex;
+        flex-direction: row;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: fit-content;
+        padding-bottom: 100px;
+    }
+}
